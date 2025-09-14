@@ -1,6 +1,6 @@
 import React from "react";
-import { View, Text } from "react-native";
-
+import { View } from "react-native";
+import { BatLogo } from "../../components/BatLogo/BatLogo";
 import { homeStyles } from "./HomeStyles";
 
 
@@ -9,7 +9,7 @@ export default function Home() {
         <View
         style = {homeStyles.container}
         >
-            <Text>Hello, World!!!</Text>
+            <BatLogo />
         </View>
     )
  }
