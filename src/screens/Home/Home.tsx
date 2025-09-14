@@ -16,8 +16,7 @@ export default function Home() {
         >
             <BatLogo />
             <BatInput />
-            <GeneratePassButton
-            />
+            <GeneratePassButton/>
         </View>
     )
  }
