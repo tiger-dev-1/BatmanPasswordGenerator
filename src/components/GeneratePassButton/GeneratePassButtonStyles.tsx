@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
   },
   generateButtonText: {
     color: '#000',
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: 'bold',
   }
 

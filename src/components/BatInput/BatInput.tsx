@@ -1,25 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import { View, TextInput } from "react-native";
 
 import { styles } from "./BatInputStyles";
-import { BatButton } from "../BatButton/BatButton";
 
+interface BatInputProps {
+    password?: string;
+}
 
-
-
-export function BatInput () {
-
-    const [password, setPassword] = useState('');
+export function BatInput ({ password }: BatInputProps) {
 
     return (
         <View style={styles.container}>
             <TextInput style={styles.batInput}
                 placeholder="Password will be Here"
                 placeholderTextColor={'#44496f'}
-                onChangeText={setPassword}
                 value={password}
+                editable={false}
+                multiline={true}
             />
-            <BatButton password={password} />
         </View>
     )
 }

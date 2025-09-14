@@ -19,7 +19,7 @@ export const batLogoStyles = StyleSheet.create({
   },
   title: {
     textAlign: 'center',
-    fontSize: 18,
+    fontSize: 16,
     color: '#E5BF3C',
     fontWeight: 'bold',
   },

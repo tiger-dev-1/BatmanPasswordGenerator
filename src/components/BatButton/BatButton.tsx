@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  View,
   TouchableOpacity,
   Text,
   Alert,
@@ -26,14 +25,12 @@ import {
   }
 
    return (
-   <View style={styles.container}>
-        <TouchableOpacity
-            onPress={copyToTransferArea}>
-                <Text
-                style={styles.buttonText}>
-                        COPY
-                </Text>
-        </TouchableOpacity>
-    </View>
+    <TouchableOpacity
+        style={styles.button}
+        onPress={copyToTransferArea}>
+            <Text style={styles.buttonText}>
+                    COPY
+            </Text>
+    </TouchableOpacity>
    )
  }

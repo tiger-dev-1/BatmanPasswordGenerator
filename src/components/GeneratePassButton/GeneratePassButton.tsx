@@ -3,17 +3,18 @@ import { View, TouchableOpacity, Text } from 'react-native';
 
 import { styles } from './GeneratePassButtonStyles';
 
-function generatePassword() {
-    console.log('Generate Password')
+interface GeneratePassButtonProps {
+  onPress: () => void;
 }
 
-export function GeneratePassButton() {
+export function GeneratePassButton({ onPress }: GeneratePassButtonProps) {
+
   return (
     <View
     style={styles.container}>
         <TouchableOpacity
         style={styles.generateButton}
-        onPress={generatePassword}
+        onPress={onPress}
         >
             <Text
             style={styles.generateButtonText}
