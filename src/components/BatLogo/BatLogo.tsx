@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  View,
   Image,
   Text,
  } from "react-native";
@@ -9,7 +10,7 @@ import { batLogoStyles  } from "./BatLogoStyles";
 
 export function BatLogo() {
   return (
-    <>
+    <View style={batLogoStyles.container}>
         <Text style={batLogoStyles.title}>
           BATMAN PASSWORD GENERATOR
         </Text>
@@ -17,6 +18,6 @@ export function BatLogo() {
           source = {batLogo}
           style={batLogoStyles.logo}
         />
-    </>
+    </View>
   );
 }
