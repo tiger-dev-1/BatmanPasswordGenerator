@@ -11,11 +11,15 @@ export const styles = StyleSheet.create({
   },
   batInput: {
     alignSelf: 'center',
-    width: '75%',
+    width: '60%',
     height: '100%',
     backgroundColor: '#fff',
     borderColor: '#E5BF3C',
     borderWidth: 3,
-    borderRadius: 20,
+    borderTopLeftRadius: 20,
+    borderBottomLeftRadius: 20,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+
   },
 });
